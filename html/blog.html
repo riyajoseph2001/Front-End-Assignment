@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Summernote CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.css">
+    <!-- Inlude Custom CSS -->
+    <link rel="stylesheet" href="../CSS/blog.css">
+    <!-- Include custom font for title -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Dancing+Script:wght@500&family=Great+Vibes&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="header"
+        style="display: flex; justify-content: left; align-items: center; height: 20vh; margin-left: 10%;">
+        <img src="/images/Riya Joseph- Photo-1.jpg" alt="Your Photo" class="photo"
+            style="height: 100px; width: 100px; border-radius: 50%;">
+        <div class="text" style="padding: 20px;">
+            <h1>My Simple Blog</h1>
+        </div>
+    </div>
+    <div class="mt-4 customContainer" id="blogPosts">
+        <!-- to append the posts -->
+    </div>
+    <div class="container">
+        <!-- Form to add new blog post -->
+        <form id="blogForm">
+            <!-- blog post -->
+            <div class="form-group">
+                <label for="txtName">Name:</label>
+                <input type="text" class="form-control" id="txtName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="txtTitle">Title:</label>
+                <input type="text" class="form-control" id="txtTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Post Content:</label>
+                <!--Summernote -->
+                <textarea class="form-control summernote" id="content" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Post</button>
+        </form>
+
+    </div>
+
+
+    <!--Summernote JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.js"></script>
+    <!--JavaScript file -->
+    <script src="../Js/blog.js"></script>
+</body>
+
+</html>
