@@ -1,0 +1,9 @@
+/* CSS to style the error message text in red */
+.error {
+    color: red;
+}
+
+/* CSS to style the invalid input fields in red */
+.invalid-input {
+    border: 2px solid red;
+}

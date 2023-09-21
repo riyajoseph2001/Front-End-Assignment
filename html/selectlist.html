@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Selection Form</title>
+    <script src="/js/selectlist.js"></script>
+</head>
+<body>
+    <h1>Programming Languages</h1>
+    <form>
+        <label for="languageSelect">Choose your favorite programming language:</label>
+        <select id="languageSelect" name="languages" onchange="changeTextInput()">
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option value="C++">C++</option>
+            <option value="C#">C#</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <div id="otherTextInput" style="display: none;">
+            <label for="otherCategory">Give any other programming language:</label>
+            <input type="text" id="otherCategory" name="otherCategory">
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
